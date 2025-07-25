@@ -1,0 +1,218 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color:  #ffce72;
+}
+
+@font-face {
+    font-family: 'Sauce Tomato';
+    src: url('SauceTomato.woff2') format('woff2'),
+        url('SauceTomato.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Darling Girl Demo';
+    src: url('DarlingGirlDemoRegular.woff2') format('woff2'),
+        url('DarlingGirlDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DUSHICK';
+    src: url('DUSHICK-Regular.woff2') format('woff2'),
+        url('DUSHICK-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 2fr 12fr 1fr;
+}
+
+header {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 50px;
+    margin-left: 4em;
+}
+
+nav button {
+    height: 2.5em;
+    width: 5em;
+    border: none;
+    font-family: 'Sauce Tomato';
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    color: #18865d;
+    background-color:  #ffce72;
+}
+
+nav .buttons {
+    display: flex;
+    gap: 35px;
+    margin-right: 4em;
+}
+
+nav button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(235, 70, 56);
+}
+
+nav button:active {
+    color: #34b183;
+}
+
+#contents {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 4em;
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+}
+
+#contents .title {
+    font-family: 'Sauce Tomato';
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(235, 70, 56);
+}
+
+.title span {
+    font-family: 'Sauce Tomato';
+    color: #862818;
+}
+
+.content {
+    font-family: 'DUSHICK';
+    font-size: 2em;
+    color:  #ffce72;
+    background-color: rgb(235, 70, 56);
+    height: 50rem;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+}
+
+.content > .img-home {
+    height: 100%;
+    width: 18.1em;
+    max-width: none;
+    opacity: 0.8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content > .img-menu {
+    height: 92.1%;
+    width: 18.1em;
+    max-width: none;
+    opacity: 0.8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content > .img-about {
+    height: 100%;
+    width: 18.1em;
+    max-width: none;
+    opacity: 0.8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content > div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 16em;
+    padding: 1em;
+}
+
+.center {
+    text-align: center
+}
+
+.white {
+    color: rgb(255, 227, 184);
+}
+
+.justify {
+    text-align: justify;
+}
+
+.card-logo {
+    height: 100px;
+    width: 200px;
+    align-self: center;
+    margin-bottom: 1em;
+    opacity: 0.8;
+}
+
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  margin: 8px 0;
+  font-size: 2rem;
+  color: #ffce72;
+}
+
+.item-name {
+  flex-shrink: 0;
+}
+
+.dots {
+  flex-grow: 1;
+  margin: 0 8px;
+  overflow: hidden;
+  text-align: left;
+  color: #ffce72;
+}
+
+.item-price {
+  flex-shrink: 0;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-family: 'Sauce Tomato';
+    letter-spacing: 2px;
+    color: #ffce72;
+    background-color: rgb(235, 70, 56);
+}
